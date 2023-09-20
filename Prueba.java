@@ -8,7 +8,7 @@ public class Prueba {
         al.add("Sevilla");
         al.add("Cordoba");
 
-        al.get(1);
+        al.get(0);
         al.get(1);
 
         HashMap capitalesPorComunidad = new HashMap<String, String>();
