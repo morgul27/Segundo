@@ -10,7 +10,7 @@ public class conexionesConProccesBuilder {
         try {
             // el primer nombre es el programa con el que se ejecuta y el segundo es la ruta
             // del archivo
-            ProcessBuilder pBuilder = new ProcessBuilder("Notepad.exe", "mirar estudiar.txt");
+            ProcessBuilder pBuilder = new ProcessBuilder("Notepad.exe", "prueba.txt");
 
             Process p = pBuilder.start(); // tambien si solo quiero ejecutarlo, se puede poner pBuilder.star();
             int a = p.waitFor();
