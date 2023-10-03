@@ -10,7 +10,7 @@ public class conexionesJavaPython {
             // Crear una instancia de Runtime
             Runtime runtime = Runtime.getRuntime();
 
-            String[] infoProceso = { "phyton", "prueba.phyton" }; // colocar los archivos que se quiera leer
+            String[] infoProceso = { "phyton.exe", "prueba.phyton" }; // colocar los archivos que se quiera leer
             Process proceso = Runtime.getRuntime().exec(infoProceso);// seleccionar el proceso que se va a ejecutar
             int valorRetorno = proceso.waitFor();
             if (valorRetorno == 0) {

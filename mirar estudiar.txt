@@ -1,0 +1,3 @@
+String [] indoProcesg={"ls","-","l"}
+
+Se tiene poner con comillas (""), para que pueda leerlo y que no cometa errores
