@@ -13,9 +13,9 @@ public class conexionesEnC {
             Process proceso = pBuilder.start();
             int valorRetorno = proceso.waitFor();
             if (valorRetorno == 0) {
-                System.out.println("El proceso completado");
+                System.out.println("El proceso completado" + valorRetorno);
             } else {
-                System.out.println("fallo");
+                System.out.println("fallo" + valorRetorno);
             }
 
         } catch (Exception e) {
