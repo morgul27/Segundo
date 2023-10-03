@@ -8,7 +8,15 @@ public class conexionesEnC {
             ProcessBuilder pBuilder = new ProcessBuilder("Notepad.exe",
                     "C:/Users/JoséMiguelNavarroDeA/Desktop/trabajos/Segundo/prueba.txt");
 
-            pBuilder.directory(new File("c:/directorio_salida/", "prueba.txt"));
+            pBuilder.directory(new File("C:/Users/JoséMiguelNavarroDeA/Desktop/trabajos")); // C:/directorio_salida"
+
+            Process proceso = pBuilder.start();
+            int valorRetorno = proceso.waitFor();
+            if (valorRetorno == 0) {
+                System.out.println("El proceso completado");
+            } else {
+                System.out.println("fallo");
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
