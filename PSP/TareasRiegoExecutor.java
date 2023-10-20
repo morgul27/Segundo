@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 public class TareasRiegoExecutor implements Runnable {
     @Override
     public void run() {
-
         System.out.println("Regando...");
     }
 
