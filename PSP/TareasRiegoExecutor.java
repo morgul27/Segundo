@@ -2,9 +2,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import PSP.SistemaRiegoExecutor;
-
-public class SistemaTareasRiego implements Runnable {
+public class TareasRiegoExecutor implements Runnable {
     @Override
     public void run() {
 
@@ -13,7 +11,7 @@ public class SistemaTareasRiego implements Runnable {
 
     public static void main(String[] args) {
 
-        SistemaRiegoExecutor sr = new SistemaRiegoExecutor();
+        TareasRiegoExecutor sr = new TareasRiegoExecutor();
 
         ScheduledExecutorService stp = Executors.newSingleThreadScheduledExecutor();
 
